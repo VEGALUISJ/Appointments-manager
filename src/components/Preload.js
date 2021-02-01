@@ -3,13 +3,13 @@ import "../styles/Preload.scss";
 
 function preLoad() {
   return (
-    <div class="preload">
-      <div class="loading">
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
+    <div className="preload">
+      <div className="loading">
+        <div className="dot"></div>
+        <div className="dot"></div>
+        <div className="dot"></div>
+        <div className="dot"></div>
+        <div className="dot"></div>
       </div>
     </div>
   );

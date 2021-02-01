@@ -14,6 +14,7 @@ body {
   );
   min-height: 100%;
   padding-bottom: 5rem;
+  animation: transitionIn ease 1s;
 }
 
 h1,
@@ -32,26 +33,32 @@ h2 {
 .list-items .media {
   border-bottom: 1px solid #e1e1e1;
   padding-bottom: 3rem;
+  animation: transitionIn ease 1s;
 }
 
 .list-items .media:last-of-type {
   border-bottom: 0;
+  animation: transitionIn ease 1s;
 }
 
 .list-items .media-body p {
   margin: 0;
+  animation: transitionIn ease 1s;
 }
 
 .list-items .media-body button {
   margin-top: 1rem !important;
+  animation: transitionIn ease 1s;
 }
 
 .list-items .media-body span {
   font-weight: bold;
+  animation: transitionIn ease 1s;
 }
 
 label {
   color: white;
+  animation: transitionIn ease 1s;
 }
 
 input[type="date"],
@@ -63,6 +70,13 @@ input[type="time"] {
   border-radius: 4px;
   box-shadow: none;
   box-sizing: border-box;
+  animation: transitionIn ease 1s;
+}
+
+input,
+select,
+button {
+  animation: transitionIn ease 1s;
 }
 
 .item {
@@ -70,15 +84,18 @@ input[type="time"] {
   background: white;
   border-bottom: 1px solid #e1e1e1;
   color: black;
+  animation: transitionIn ease 1s;
 }
 
 .item p {
   font-weight: bold;
   margin-bottom: 0.8rem;
+  animation: transitionIn ease 1s;
 }
 
 .item p span {
   font-weight: normal;
+  animation: transitionIn ease 1s;
 }
 
 .item:first-of-type {
