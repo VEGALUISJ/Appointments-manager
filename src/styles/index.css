@@ -18,7 +18,7 @@ body {
 
 h1,
 h2 {
-  color: white;
+  color: Black;
   padding: 3rem 0;
   text-align: center;
 
@@ -26,6 +26,7 @@ h2 {
 
   font-family: "Yusei Magic", sans-serif;
   letter-spacing: 1px;
+  animation: transitionIn ease 1s;
 }
 
 .list-items .media {
@@ -105,4 +106,15 @@ input[type="time"] {
   text-transform: uppercase;
   text-align: center;
   font-family: "Staatliches", cursive;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-20deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateY(0);
+  }
 }
