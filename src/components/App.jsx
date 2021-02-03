@@ -14,7 +14,7 @@ const App = () => {
       {!done ? (
         <Preload />
       ) : (
-        <div classname="preload">
+        <div>
           <h1>Costumer Scheduler</h1>
 
           <div className="container">

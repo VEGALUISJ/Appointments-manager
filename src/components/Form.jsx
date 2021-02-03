@@ -1,22 +1,60 @@
 import React, { Fragment, useState } from "react";
+import { nanoid } from "nanoid";
 
 const Form = () => {
   const [item, setItem] = useState({
     name: "",
     date: "",
     time: "",
-    service: "No Service Requested",
+    service: "No Service Selected",
   });
+  const [error, setError] = useState(false);
 
-  let handleChange = () => {
-    console.log("Writing");
+  const handleChange = (e) => {
+    setItem({
+      ...item,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const { name, date, time, service } = item;
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    //Validate
+
+    if (
+      name.trim() === "" ||
+      date.trim() === "" ||
+      time.trim() === "" ||
+      service.trim() === "" ||
+      service === "No Service Selected"
+    ) {
+      setError(true);
+      return;
+    }
+
+    //Remove Error Message
+
+    setError(false);
+
+    //Assign ID
+
+    item.id = nanoid();
+
+    //Create Item
+
+    //Restart form
   };
 
   return (
     <Fragment>
       <h2>Create appoinment</h2>
 
-      <form>
+      {error ? <p className="alert-error">All fields are required</p> : null}
+
+      <form onSubmit={handleSubmit}>
         <label>Full Name</label>
         <input
           type="text"
@@ -24,7 +62,7 @@ const Form = () => {
           className="u-full-width"
           placeholder="Please Insert Costumer Full Name"
           onChange={handleChange}
-          required
+          value={name}
         />
 
         <label>Date</label>
@@ -32,7 +70,7 @@ const Form = () => {
           type="date"
           name="date"
           className="u-full-width"
-          required
+          value={date}
           onChange={handleChange}
         />
 
@@ -41,7 +79,7 @@ const Form = () => {
           type="time"
           name="time"
           className="u-full-width"
-          required
+          value={time}
           onChange={handleChange}
         />
 
@@ -50,9 +88,10 @@ const Form = () => {
           type="text"
           name="service"
           className="u-full-width"
+          value={service}
           onChange={handleChange}
-          required
         >
+          <option value="No Service Selected">{service}</option>
           <option value="Lashes">Lashes $100</option>
           <option value="Nails">Nails $60</option>
           <option value="Pedicure">Pedicure $80</option>
