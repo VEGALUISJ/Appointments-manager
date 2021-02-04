@@ -4,10 +4,15 @@ import Preload from "./Preload";
 
 const App = () => {
   const [done, setDone] = useState(undefined);
+  const [items, setItems] = useState([]);
 
   setTimeout(() => {
     setDone(true);
   }, 6000);
+
+  const createItems = (item) => {
+    setItems([...items, item]);
+  };
 
   return (
     <div>
@@ -20,7 +25,7 @@ const App = () => {
           <div className="container">
             <div className="row">
               <div className="one-half column">
-                <Form />
+                <Form createItems={createItems} />
               </div>
               <div className="one-half column">2</div>
             </div>

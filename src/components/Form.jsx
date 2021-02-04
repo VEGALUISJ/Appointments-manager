@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from "react";
 import { nanoid } from "nanoid";
 
-const Form = () => {
+const Form = ({ createItems }) => {
   const [item, setItem] = useState({
     name: "",
     date: "",
@@ -45,7 +45,16 @@ const Form = () => {
 
     //Create Item
 
+    createItems(item);
+
     //Restart form
+
+    setItem({
+      name: "",
+      date: "",
+      time: "",
+      service: "No Service Selected",
+    });
   };
 
   return (
