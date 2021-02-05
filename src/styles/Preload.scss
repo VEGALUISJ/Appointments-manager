@@ -3,7 +3,12 @@
   height: 100vh;
   justify-content: center;
   align-items: center;
-  background: #222;
+  background-image: linear-gradient(
+    -225deg,
+    #272627 0%,
+    #2193b0 52%,
+    #6dd5ed 100%
+  );
 }
 
 .loading {
