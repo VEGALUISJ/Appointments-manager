@@ -1,7 +1,7 @@
 # Appoinment Manager
 # Purpose:
 
-This is a Project based on my profesional experience developing websites. This is my personal portfolio where ill be showing some projects i have been working and the next ones i'll be working. Idea of this project is that each 6 months i have to be able to create new versions of this website. Is Fully adaptative, use CSS animations with Javascript help and Node.js to make work the contact form.
+This is a Web App where you can schedule appointments for your customers without loose information. Information is saved in Local Storage to keep data safe even if the user reloads.
 
 ![demo](https://media.giphy.com/media/W17kKgzJBBJuf1ohSC/giphy.gif)
 
