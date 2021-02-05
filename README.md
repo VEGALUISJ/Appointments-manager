@@ -3,7 +3,7 @@
 
 This is a Web App where you can schedule appointments for your customers without loose information. Information is saved in Local Storage to keep data safe even if the user reloads.
 
-![demo](https://media.giphy.com/media/W17kKgzJBBJuf1ohSC/giphy.gif)
+![demo](https://media.giphy.com/media/28LAkmRya7tU3kl0q8/giphy.gif)
 
 ### Technologies used:
 - HTML, CSS, Javascript, React.js, Skeleton, NanoId (npm library for random id generator), LocalStorage Functionality, Hooks. Project was deployed using Netlify.
