@@ -6,7 +6,7 @@ This is a Web App where you can schedule appointments for your customers without
 ![demo](https://media.giphy.com/media/W17kKgzJBBJuf1ohSC/giphy.gif)
 
 ### Technologies used:
-- HTML, CSS, Javascript, React.js, Skeleton, NanoId (npm library for random id generator), LocalStorage Functionality, Hooks.
+- HTML, CSS, Javascript, React.js, Skeleton, NanoId (npm library for random id generator), LocalStorage Functionality, Hooks. Project was deployed using Netlify.
 
 ##### Cool Features:
 
