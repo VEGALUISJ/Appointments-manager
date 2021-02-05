@@ -59,7 +59,7 @@ const Form = ({ createItems }) => {
 
   return (
     <Fragment>
-      <h2>Create appoinment</h2>
+      <h2>Create appointment</h2>
 
       {error ? <p className="alert-error">All fields are required</p> : null}
 
