@@ -16,7 +16,7 @@ Website full responsive design.
 
 ##### Getting Started:
 
-This Project was created using create react app. Comands to use code is 
+This Project was created using create react app. Comands to use code is.
 
 ### `npm start`
 ### `npm test`
