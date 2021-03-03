@@ -45,7 +45,7 @@ const App = () => {
         <Preload />
       ) : (
         <div>
-          <h1>Costumer Scheduler</h1>
+          <h1>Customer Scheduler</h1>
 
           <div className="container">
             <div className="row">

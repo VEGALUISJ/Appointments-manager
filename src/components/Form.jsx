@@ -69,7 +69,7 @@ const Form = ({ createItems }) => {
           type="text"
           name="name"
           className="u-full-width"
-          placeholder="Please Insert Costumer Full Name"
+          placeholder="Please Insert Customer Full Name"
           onChange={handleChange}
           value={name}
         />
